@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>海外虚拟 IP · 双 IP 方案（Sterling 姐妹）</title>
+<title>海外虚拟 IP · 对标粉奶奶，做两个长辈 IP</title>
 <style>
-:root{--bg:#f7f4ef;--ink:#1f1d1b;--muted:#6d6862;--line:#e2d9cd;--pink:#c23b6e;--black:#171514;--ivory:#f1e9dc;--red:#b3261e;--card:#fff}
+:root{--bg:#f7f4ef;--ink:#1f1d1b;--muted:#6d6862;--line:#e2d9cd;--pink:#c23b6e;--card:#fff;--emerald:#0f4d3a;--gold:#c9a227;--navy:#22334d;--camel:#a8794f;--burgundy:#6d2a35;--ivory:#f1e9dc;--red:#b3261e}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Helvetica Neue",Arial,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1080px;margin:0 auto;padding:48px 28px 80px}
@@ -16,36 +16,37 @@ h1{font-size:clamp(28px,3.6vw,42px);line-height:1.15;margin:8px 0 6px;letter-spa
 h2{font-size:21px;margin:38px 0 12px;letter-spacing:-.01em}
 h3{font-size:16px;margin:0 0 6px}
 p{margin:8px 0}
-.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
-.person{border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--card);min-height:420px;display:flex;flex-direction:column}
-.person img{width:100%;height:300px;object-fit:cover;display:block}
+.benchmark{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.benchmark img{width:100%;border-radius:14px;display:block;aspect-ratio:4/5;object-fit:cover}
+.benchmark .label{font-size:11px;letter-spacing:.12em;color:var(--pink);font-weight:800}
+.benchmark h2{margin:4px 0 4px;font-size:28px}
+.benchmark p{font-size:14px;color:#3e3a36}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:10px}
+.person{border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:400px;display:flex;flex-direction:column;background:var(--card)}
+.person .art{height:260px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.person .art .letter{font-family:Georgia,serif;font-size:112px;line-height:1;color:#fff;letter-spacing:-.05em;opacity:.95}
+.person.claudette .art{background:radial-gradient(circle at 40% 30%,#1f6b52 0%,#0f4d3a 70%)}
+.person.charlie .art{background:linear-gradient(135deg,#22334d 0%,#3d2c3a 55%,#6d2a35 100%)}
 .person .body{padding:18px 20px}
 .person h2{margin:0 0 2px;font-size:26px}
 .person .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
 .person .quote{font-size:15px;margin:0;color:#3e3a36}
-.person.gigi{background:#fff}
-.person.vera{background:var(--black);color:var(--ivory);border-color:#2b2724}
-.person.vera h2{color:#fff}
-.person.vera .meta{color:#c9beb1}
-.person.vera .quote{color:#f1e9dc}
-.vera-art{height:300px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 35%,#3a2f2a 0%,#171514 70%);position:relative}
-.vera-art .v{font-family:Georgia,serif;font-size:130px;line-height:1;color:var(--ivory);letter-spacing:-.05em}
-.vera-art .line{position:absolute;bottom:22px;left:22px;right:22px;height:1px;background:var(--red)}
-.vera-art .red{position:absolute;top:18px;right:18px;width:12px;height:12px;border-radius:50%;background:var(--red)}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
-.card p{font-size:13px;color:#3e3a36;margin:4px 0}
-.card ul{margin:6px 0 0;padding-left:16px;font-size:13px;color:#3e3a36}
-.card li{margin:3px 0}
+.person .tagline{font-size:12px;color:var(--pink);font-weight:700;margin-top:8px}
 .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--card)}
 table{width:100%;border-collapse:collapse;font-size:13px}
 th,td{padding:10px 12px;border-bottom:1px solid #efe7dc;text-align:left;vertical-align:top}
 th{background:#f4ebe5;font-size:12px;color:#5d4a42}
 tr:last-child td{border-bottom:0}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.card p{font-size:13px;color:#3e3a36;margin:4px 0}
+.card ul{margin:6px 0 0;padding-left:16px;font-size:13px;color:#3e3a36}
+.card li{margin:3px 0}
 .quote-box{background:var(--ink);color:#f7f4ef;border-radius:16px;padding:18px 20px;margin-top:12px;font-size:13px}
 .quote-box p{color:#e6ddd5;margin:4px 0}
 .note{font-size:12px;color:var(--muted);margin-top:10px}
-@media(max-width:800px){.duo{grid-template-columns:1fr}.grid3{grid-template-columns:1fr}}
+.bench-note{background:#f3e6ea;border:1px solid #e7c5bd;border-radius:12px;padding:10px 14px;font-size:12px;color:#6b2f25;margin-top:10px}
+@media(max-width:800px){.benchmark,.duo,.grid3{grid-template-columns:1fr}}
 @media print{body{background:#fff}.wrap{padding:20px}}
 </style>
 </head>
@@ -53,136 +54,133 @@ tr:last-child td{border-bottom:0}
 <div class="wrap">
 <header>
   <div class="eyebrow">海外虚拟 IP / 双 IP 方案</div>
-  <h1>两个奶奶，两种活法：Sterling 姐妹</h1>
-  <p class="sub">从 Granny Spills 出发，做两个差异化 IP；TikTok + IG 主，平台扩展。</p>
+  <h1>先对标粉奶奶，再做两个长辈 IP</h1>
+  <p class="sub">一个黑人奶奶 + 一个白人 gay 大叔；TikTok / IG 主；先各做 10 条测试。</p>
 </header>
 
-<section class="duo">
-  <article class="person gigi">
-    <img src="screens/granny-pink-sofa.jpg" alt="Gigi 粉色奶奶视觉参考">
-    <div class="body">
-      <h2>Gigi Sterling</h2>
-      <div class="meta">69 岁 · 粉奶奶 · 已婚 · 豪门/情感/时尚</div>
-      <p class="quote">“Sweetie, please.”<br>粉色公寓、粉色车、粉色飞机；暖、浪漫、护短。</p>
-    </div>
-  </article>
-  <article class="person vera">
-    <div class="vera-art"><div class="v">V</div><div class="red"></div><div class="line"></div></div>
-    <div class="body">
-      <h2>Vera Sterling</h2>
-      <div class="meta">71 岁 · 黑奶奶 · 独身 · 红旗/人生/书</div>
-      <p class="quote">“Listen, honey.”<br>黑咖啡、红笔、黑白公寓；冷、毒舌、只信证据。</p>
-    </div>
-  </article>
+<section class="benchmark">
+  <img src="screens/granny-pink-sofa.jpg" alt="Granny Spills 粉色奶奶">
+  <div>
+    <div class="label">对标 / 不是我们的 IP</div>
+    <h2>Granny Spills</h2>
+    <p><b>TikTok 120 万粉 / 1600 万赞；IG 200 万粉 / 329 帖。</b>近一周 13 条，约每天 2 条；最高 7250 万播放。</p>
+    <p>她证明：<b>毒舌长辈 + 近景大字幕 + 日常场景 + 高頻</b>，TikTok 吃这一套。我们抄她的骨架，不抄她的脸、名字、原片。</p>
+    <div class="bench-note">注意：粉奶奶是对标，不是我们要做的 IP。我们的两个 IP 是 Claudette（黑人奶奶）和 Charlie（白人 gay 大叔）。</div>
+  </div>
 </section>
 
 <section>
-  <h2>一、为什么是两个 IP</h2>
-  <div class="grid3">
-    <div class="card">
-      <h3>对比记忆</h3>
-      <p>粉 vs 黑、暖 vs 冷、浪漫 vs 清醒。用户一眼记住“两个奶奶”，不是又一个年轻美女号。</p>
-    </div>
-    <div class="card">
-      <h3>共享宇宙</h3>
-      <p>姐妹可以各自接单，也可以一起接双人品牌包；Sister Court 天然有戏。</p>
-    </div>
-    <div class="card">
-      <h3>平台扩展</h3>
-      <p>TikTok/IG 主；Pinterest 吃 Gigi 的时尚/旅行，Facebook Reels 吃奶奶人群，YouTube Shorts 做长尾。</p>
-    </div>
+  <h2>一、我们的两个 IP</h2>
+  <div class="duo">
+    <article class="person claudette">
+      <div class="art"><div class="letter">C</div></div>
+      <div class="body">
+        <h2>Claudette Banks</h2>
+        <div class="meta">68 岁 · 黑人奶奶 · 退休校长 · 亚特兰大</div>
+        <p class="quote">“Child, please.”<br>翡翠绿、金、梅子色；暖、稳、有权威；家庭/教育/穿搭/美食。</p>
+        <div class="tagline">视觉方向卡，脸模待定</div>
+      </div>
+    </article>
+    <article class="person charlie">
+      <div class="art"><div class="letter">C</div></div>
+      <div class="body">
+        <h2>Charlie Whitmore</h2>
+        <div class="meta">58 岁 · 白人 gay 大叔 · 退休时尚编辑 · 纽约</div>
+        <p class="quote">“Hello, darling.”<br>驼色、海军蓝、酒红；俏、毒舌、时髦；情感/时尚/家居/待客。</p>
+        <div class="tagline">视觉方向卡，脸模待定</div>
+      </div>
+    </article>
   </div>
+  <p class="note">两个都抄 Granny 的“骨架”：9:16、近景、大字幕、一句金句、毒舌长辈、日常场景；但人种、性别、身份、语言、场景、受众全部换成我们自己的。</p>
 </section>
 
 <section>
   <h2>二、一页对比</h2>
   <div class="table-wrap">
     <table>
-      <thead><tr><th>维度</th><th>Gigi</th><th>Vera</th></tr></thead>
+      <thead><tr><th>维度</th><th>Claudette</th><th>Charlie</th></tr></thead>
       <tbody>
-        <tr><td>颜色</td><td>粉、奶油、金</td><td>黑、象牙白、红</td></tr>
-        <tr><td>温度</td><td>暖、软、浪漫</td><td>冷、硬、清醒</td></tr>
-        <tr><td>世界观</td><td>相信爱情、相信礼仪</td><td>相信证据、相信边界</td></tr>
-        <tr><td>关系</td><td>已婚，老公 Arthur</td><td>离婚一次，独身</td></tr>
-        <tr><td>内容</td><td>豪门/情感/时尚</td><td>红旗/人生/书/极简</td></tr>
-        <tr><td>受众</td><td>25-45 + Gen Z</td><td>25-55 + Gen Z</td></tr>
-        <tr><td>品牌</td><td>美妆/时尚/旅行/食品</td><td>书/咖啡/科技/极简时尚</td></tr>
-        <tr><td>平台</td><td>Pinterest 强</td><td>X 可选</td></tr>
-        <tr><td>口头禅</td><td>“Sweetie, please.”</td><td>“Listen, honey.”</td></tr>
+        <tr><td>身份</td><td>黑人奶奶 / 退休校长</td><td>白人 gay 大叔 / 退休时尚编辑</td></tr>
+        <tr><td>年龄</td><td>68</td><td>58</td></tr>
+        <tr><td>颜色</td><td>翡翠绿、金、梅子色</td><td>驼色、海军蓝、酒红、奶油</td></tr>
+        <tr><td>语气</td><td>暖、稳、有权威</td><td>快、俏、毒舌</td></tr>
+        <tr><td>一句话</td><td>“Child, please.”</td><td>“Hello, darling.”</td></tr>
+        <tr><td>内容</td><td>家庭/教育/穿搭/美食</td><td>情感/时尚/家居/待客</td></tr>
+        <tr><td>受众</td><td>黑人女性/家庭 + Gen Z</td><td>女性/LGBTQ+ + Gen Z</td></tr>
+        <tr><td>品牌</td><td>美妆/食品/服饰/家居</td><td>家居/时尚/美妆/旅行/酒</td></tr>
+        <tr><td>平台</td><td>Facebook Reels 强</td><td>Pinterest 强</td></tr>
       </tbody>
     </table>
   </div>
-  <p class="note">一句话记：Gigi 让你想被爱，Vera 让你想清醒。</p>
 </section>
 
 <section>
-  <h2>三、Gigi 身份卡</h2>
+  <h2>三、Claudette 身份卡</h2>
   <div class="table-wrap">
     <table>
       <thead><tr><th>项</th><th>内容</th></tr></thead>
       <tbody>
-        <tr><td>名字/年龄</td><td><b>Gigi Sterling</b> / 69 岁（1957 年生，明年 70）</td></tr>
-        <tr><td>外形</td><td>美国白人女性；银白蓬松短发/盘发、粉衣、墨镜、红唇、珍珠/名牌包</td></tr>
-        <tr><td>身份</td><td>前精品店老板 / 社交名媛；现“粉色生活”创作者；已婚</td></tr>
-        <tr><td>背景</td><td>Palm Beach 粉色公寓；丈夫 Arthur 是退休建筑师</td></tr>
-        <tr><td>性格</td><td>浪漫、热情、爱管闲事、护短、有点虚荣；被宠坏但清醒</td></tr>
-        <tr><td>说话</td><td>慢、暖、拖音；“sweetie / honey / darling”；先夸后损</td></tr>
-        <tr><td>内容</td><td>粉色豪门 30%；情感/婚姻 25%；时尚/美妆 20%；毒舌/POV 15%；夫妻/闺蜜 10%</td></tr>
-        <tr><td>受众/品牌</td><td>25-45 女性 + Gen Z；美妆/时尚/旅行/食品</td></tr>
-        <tr><td>平台</td><td>TikTok + IG 主；Pinterest 强；YouTube Shorts 复用</td></tr>
-        <tr><td>禁忌</td><td>政治/成人/医疗/金融；真人名人；年龄羞辱</td></tr>
-        <tr><td>系列</td><td>Gigi Says / Pink Rules / Husband vs Gigi / Ask Gigi</td></tr>
+        <tr><td>名字/年龄</td><td><b>Claudette Banks</b> / 68 岁（1958 年生）</td></tr>
+        <tr><td>外形</td><td>黑人女性；银白短卷发/低盘发、翡翠绿/金/梅子色、金耳环、莓色唇、优雅不夸张</td></tr>
+        <tr><td>身份</td><td>退休高中校长；从教 30 年；社区长辈；丧偶 12 年；三个孩子、五个孙辈</td></tr>
+        <tr><td>背景</td><td>住亚特兰大；前廊、花园、家庭照片墙；周末做一桌饭</td></tr>
+        <tr><td>性格</td><td>暖、稳、有权威、护短、幽默；不吼，一句“Child, please”就够</td></tr>
+        <tr><td>说话</td><td>中低音、慢、清楚；短句；“Child, please.” / “Baby, listen.” / “Mm-hmm.”</td></tr>
+        <tr><td>内容</td><td>家庭/代际 30%；教育/人生/职场 25%；穿搭/美妆/头发 20%；美食/待客 15%；毒舌/POV 10%</td></tr>
+        <tr><td>受众/品牌</td><td>黑人女性/家庭 25-55 + Gen Z；美妆（纹理头发/深肤色）、食品、服饰、家居</td></tr>
+        <tr><td>平台</td><td>TikTok + IG 主；Facebook Reels 强；Pinterest 可选</td></tr>
+        <tr><td>禁忌</td><td>不演“大嗓门黑人奶奶”；不拿种族当笑点；不碰政治/成人/医疗/金融；不真人名人</td></tr>
+        <tr><td>系列</td><td>Ms. Claudette Says / Nana’s Rules / Sunday Table / Ask Ms. Claudette</td></tr>
       </tbody>
     </table>
   </div>
+  <p class="note">写作红线：她的权威来自 30 年校长和人生经验，不是“黑人奶奶很凶”的刻板印象。</p>
 </section>
 
 <section>
-  <h2>四、Vera 身份卡</h2>
+  <h2>四、Charlie 身份卡</h2>
   <div class="table-wrap">
     <table>
       <thead><tr><th>项</th><th>内容</th></tr></thead>
       <tbody>
-        <tr><td>名字/年龄</td><td><b>Vera Sterling</b> / 71 岁（Gigi 的姐姐）</td></tr>
-        <tr><td>外形</td><td>美国白人女性；银白利落短发、黑/象牙白/红、极简金饰、深色墨镜；不穿粉</td></tr>
-        <tr><td>身份</td><td>退休调查记者；独居；离婚一次，单身主义</td></tr>
-        <tr><td>背景</td><td>纽约黑白公寓；40 年调查记者；现在做“红旗文件”</td></tr>
-        <tr><td>性格</td><td>冷、干、毒舌、独立、护短；对妹妹嘴硬心软；只信证据</td></tr>
-        <tr><td>说话</td><td>快、低、干；不带笑；“Listen, honey.”；短句</td></tr>
-        <tr><td>内容</td><td>红旗/关系审计 30%；40 年人生建议 25%；Sister Court 20%；书/咖啡/极简时尚 15%；Vera vs internet 10%</td></tr>
-        <tr><td>受众/品牌</td><td>25-55 女性 + Gen Z；书/咖啡/科技/极简时尚</td></tr>
-        <tr><td>平台</td><td>TikTok + IG 主；X 可选；YouTube Shorts 复用</td></tr>
-        <tr><td>禁忌</td><td>不提供法律/医疗/金融建议；不碰政治；不真人名人；不刻薄到伤人</td></tr>
-        <tr><td>系列</td><td>Red Flag Files / Sister Court / Vera’s Rules / Ask Vera</td></tr>
+        <tr><td>名字/年龄</td><td><b>Charles “Charlie” Whitmore</b> / 58 岁</td></tr>
+        <tr><td>外形</td><td>白人男性；银灰短发、细框眼镜、剪裁西装/开衫、丝巾、图章戒指；驼色/海军蓝/酒红/奶油</td></tr>
+        <tr><td>身份</td><td>退休时尚编辑 / 室内设计师；已婚 18 年，丈夫 David 是建筑师；两只狗</td></tr>
+        <tr><td>背景</td><td>住纽约；公寓有艺术、书、酒吧车、狗；周末办晚餐</td></tr>
+        <tr><td>性格</td><td>俏、毒舌、时髦、慷慨、护短；“先损你，再带你去买对的”</td></tr>
+        <tr><td>说话</td><td>轻、快、清晰；“Hello, darling.” / “Absolutely not.” / “We don’t do that.”</td></tr>
+        <tr><td>内容</td><td>情感/约会/红旗 30%；穿搭/家居 25%；待客/美食/酒 20%；文化/观点 15%；老公/狗/日常 10%</td></tr>
+        <tr><td>受众/品牌</td><td>女性 25-45、LGBTQ+ 25-45、Gen Z；家居、时尚、美妆、旅行、酒、宠物</td></tr>
+        <tr><td>平台</td><td>TikTok + IG 主；Pinterest 强；YouTube Shorts 复用；X 可选</td></tr>
+        <tr><td>禁忌</td><td>不演“娘娘腔/滥交”刻板印象；不拿性向当笑点；不碰政治/成人；不真人名人</td></tr>
+        <tr><td>系列</td><td>Uncle Charlie Says / Absolutely Not / How to Host / Ask Uncle Charlie</td></tr>
       </tbody>
     </table>
   </div>
+  <p class="note">写作红线：他的毒舌来自时尚编辑的审美和阅历，不是“gay 一定毒舌”的刻板印象；丈夫 David 是正常、稳定的关系。</p>
 </section>
 
 <section>
-  <h2>五、内容怎么联动</h2>
+  <h2>五、怎么抄 Granny 的骨架</h2>
   <div class="grid3">
     <div class="card">
-      <h3>Sister Court</h3>
-      <p>每周 1 条：Gigi 带约会/衣服，Vera 当庭审判，最后姐妹拥抱。</p>
+      <h3>形式照抄</h3>
+      <p>9:16、10-20 秒、近景、大字幕、一句话；前 3 秒给钩子。</p>
     </div>
     <div class="card">
-      <h3>Duet / Stitch</h3>
-      <p>各自发一条，互相 reaction；TikTok 上更容易起量。</p>
+      <h3>内容照抄</h3>
+      <p>毒舌长辈 + 生活建议 + 日常场景 + 高频；一个场景一句金句。</p>
     </div>
     <div class="card">
-      <h3>互换生活</h3>
-      <p>Gigi 去黑公寓，Vera 去粉公寓；视觉反差最强。</p>
+      <h3>身份全换</h3>
+      <p>不抄脸/名字/原片；Claudette 和 Charlie 各自有独立的身份、语言、场景、审美。</p>
     </div>
   </div>
   <div class="quote-box">
-    <p><b>5 条联动选题：</b></p>
-    <p>1. Sister Court：Gigi 带约会对象，Vera 当庭盘问。</p>
-    <p>2. Gigi 试图让 Vera 穿粉色。</p>
-    <p>3. Vera 审计 Gigi 的老公。</p>
-    <p>4. 姐妹互换公寓一天。</p>
-    <p>5. 你是哪个姐妹？二选一测试。</p>
-    <p>配比：各自 70% 单人，30% 联动；先各自立住，再合体。</p>
+    <p><b>联动栏目（可选）：Two Elders, One Question</b></p>
+    <p>同一个问题，两个人各答一条；各自账号发，互相 duet/stitch。</p>
+    <p>5 个问题：他没回消息怎么办？能不能原谅出轨？第一次见家长穿什么？怎么请客不翻车？什么时候该离开？</p>
+    <p>配比：各自 70% 单人，30% 联动；不做“一家人”，两个 IP 独立。</p>
   </div>
 </section>
 
@@ -192,16 +190,16 @@ tr:last-child td{border-bottom:0}
     <table>
       <thead><tr><th>平台</th><th>角色</th><th>谁</th><th>说明</th></tr></thead>
       <tbody>
-        <tr><td><b>TikTok</b></td><td>主战场</td><td>两人</td><td>起量、测试、联动；70% 单人 + 30% 合体</td></tr>
+        <tr><td><b>TikTok</b></td><td>主战场</td><td>两人</td><td>起量、测试；各 70% 单人，30% 联动</td></tr>
         <tr><td><b>IG</b></td><td>主阵地</td><td>两人</td><td>作品集、品牌名片、Reels/Stories</td></tr>
-        <tr><td>YouTube Shorts</td><td>长尾</td><td>两人</td><td>复用 TikTok；后面做 Sister Court 合集</td></tr>
-        <tr><td>Pinterest</td><td>增量</td><td>Gigi</td><td>粉衣/豪宅/旅行；女性用户强</td></tr>
-        <tr><td>Facebook Reels</td><td>增量</td><td>两人</td><td>奶奶人群、家庭受众；内容复用</td></tr>
-        <tr><td>X</td><td>可选</td><td>Vera</td><td>只发一句话/观点；不做主战场</td></tr>
+        <tr><td>YouTube Shorts</td><td>长尾</td><td>两人</td><td>复用 TikTok；后面做合集</td></tr>
+        <tr><td>Pinterest</td><td>增量</td><td>Charlie 强，Claudette 可选</td><td>Charlie：家居/穿搭；Claudette：穿搭/美食</td></tr>
+        <tr><td>Facebook Reels</td><td>增量</td><td>Claudette 强，Charlie 可选</td><td>家庭/奶奶人群</td></tr>
+        <tr><td>X</td><td>可选</td><td>Charlie</td><td>只发一句话/观点；不做主战场</td></tr>
       </tbody>
     </table>
   </div>
-  <p class="note">顺序：先把 TikTok/IG 跑顺，再加 Pinterest + Facebook Reels；YouTube Shorts 同步复用；X 只给 Vera，不投入。</p>
+  <p class="note">顺序：先把 TikTok/IG 跑顺，再加 Pinterest + Facebook Reels；YouTube Shorts 同步复用；X 只给 Charlie，不投入。</p>
 </section>
 
 <section>
@@ -217,7 +215,7 @@ tr:last-child td{border-bottom:0}
 </section>
 
 <footer class="note" style="border-top:1px solid var(--line);margin-top:36px;padding-top:14px">
-  参考：Granny Spills（TikTok 120 万粉 / 1600 万赞；IG 200 万粉 / 329 帖，2026-11-19）。Gigi 视觉参考为公开主页图；Vera 为视觉方向卡，脸模待定。仅作内部策划使用。
+  对标数据：Granny Spills（TikTok 120 万粉 / 1600 万赞；IG 200 万粉 / 329 帖，2026-11-19）。Granny 图片为公开主页图；Claudette / Charlie 为视觉方向卡，脸模待定。仅作内部策划使用。
 </footer>
 </div>
 </body>
