@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>海外虚拟 IP · 对标粉奶奶，做两个长辈 IP</title>
 <style>
-:root{--bg:#f7f4ef;--ink:#1f1d1b;--muted:#6d6862;--line:#e2d9cd;--pink:#c23b6e;--card:#fff;--emerald:#0f4d3a;--gold:#c9a227;--navy:#22334d;--camel:#a8794f;--burgundy:#6d2a35;--ivory:#f1e9dc;--red:#b3261e}
+:root{--bg:#f7f4ef;--ink:#1f1d1b;--muted:#6d6862;--line:#e2d9cd;--pink:#c23b6e;--card:#fff;--purple:#4b1f6f;--plum:#2a103f;--gold:#c9a227;--navy:#22334d;--camel:#a8794f;--rose:#b76e79;--ivory:#f1e9dc;--red:#b3261e}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Helvetica Neue",Arial,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1080px;margin:0 auto;padding:48px 28px 80px}
@@ -23,10 +23,10 @@ p{margin:8px 0}
 .benchmark p{font-size:14px;color:#3e3a36}
 .duo{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:10px}
 .person{border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:400px;display:flex;flex-direction:column;background:var(--card)}
-.person .art{height:260px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-.person .art .letter{font-family:Georgia,serif;font-size:112px;line-height:1;color:#fff;letter-spacing:-.05em;opacity:.95}
-.person.claudette .art{background:radial-gradient(circle at 40% 30%,#1f6b52 0%,#0f4d3a 70%)}
-.person.charlie .art{background:linear-gradient(135deg,#22334d 0%,#3d2c3a 55%,#6d2a35 100%)}
+.person .art{height:250px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.person .art .letter{font-family:Georgia,serif;font-size:110px;line-height:1;color:#fff;letter-spacing:-.05em;opacity:.95}
+.person.claudette .art{background:radial-gradient(circle at 40% 30%,#6b3a92 0%,#4b1f6f 55%,#2a103f 100%)}
+.person.charlie .art{background:linear-gradient(135deg,#b76e79 0%,#7c4a5a 45%,#22334d 100%)}
 .person .body{padding:18px 20px}
 .person h2{margin:0 0 2px;font-size:26px}
 .person .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
@@ -45,8 +45,12 @@ tr:last-child td{border-bottom:0}
 .quote-box{background:var(--ink);color:#f7f4ef;border-radius:16px;padding:18px 20px;margin-top:12px;font-size:13px}
 .quote-box p{color:#e6ddd5;margin:4px 0}
 .note{font-size:12px;color:var(--muted);margin-top:10px}
-.bench-note{background:#f3e6ea;border:1px solid #e7c5bd;border-radius:12px;padding:10px 14px;font-size:12px;color:#6b2f25;margin-top:10px}
-@media(max-width:800px){.benchmark,.duo,.grid3{grid-template-columns:1fr}}
+.topic-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.topic-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.dot.purple{background:var(--purple)}
+.dot.rose{background:var(--rose)}
+@media(max-width:800px){.benchmark,.duo,.grid3,.topic-grid{grid-template-columns:1fr}}
 @media print{body{background:#fff}.wrap{padding:20px}}
 </style>
 </head>
@@ -65,7 +69,6 @@ tr:last-child td{border-bottom:0}
     <h2>Granny Spills</h2>
     <p><b>TikTok 120 万粉 / 1600 万赞；IG 200 万粉 / 329 帖。</b>近一周 13 条，约每天 2 条；最高 7250 万播放。</p>
     <p>她证明：<b>毒舌长辈 + 近景大字幕 + 日常场景 + 高頻</b>，TikTok 吃这一套。我们抄她的骨架，不抄她的脸、名字、原片。</p>
-    <div class="bench-note">注意：粉奶奶是对标，不是我们要做的 IP。我们的两个 IP 是 Claudette（黑人奶奶）和 Charlie（白人 gay 大叔）。</div>
   </div>
 </section>
 
@@ -77,7 +80,7 @@ tr:last-child td{border-bottom:0}
       <div class="body">
         <h2>Claudette Banks</h2>
         <div class="meta">68 岁 · 黑人奶奶 · 退休校长 · 亚特兰大</div>
-        <p class="quote">“Child, please.”<br>翡翠绿、金、梅子色；暖、稳、有权威；家庭/教育/穿搭/美食。</p>
+        <p class="quote">“Child, please.”<br>紫色 + 金耳环；温柔、稳、有耐心；家庭/教育/穿搭/美食。</p>
         <div class="tagline">视觉方向卡，脸模待定</div>
       </div>
     </article>
@@ -86,7 +89,7 @@ tr:last-child td{border-bottom:0}
       <div class="body">
         <h2>Charlie Whitmore</h2>
         <div class="meta">58 岁 · 白人 gay 大叔 · 退休时尚编辑 · 纽约</div>
-        <p class="quote">“Hello, darling.”<br>驼色、海军蓝、酒红；俏、毒舌、时髦；情感/时尚/家居/待客。</p>
+        <p class="quote">“Hello, darling.”<br>脏粉、海军蓝、驼色；俏、毒舌、时髦；情感/时尚/家居/待客。</p>
         <div class="tagline">视觉方向卡，脸模待定</div>
       </div>
     </article>
@@ -102,8 +105,8 @@ tr:last-child td{border-bottom:0}
       <tbody>
         <tr><td>身份</td><td>黑人奶奶 / 退休校长</td><td>白人 gay 大叔 / 退休时尚编辑</td></tr>
         <tr><td>年龄</td><td>68</td><td>58</td></tr>
-        <tr><td>颜色</td><td>翡翠绿、金、梅子色</td><td>驼色、海军蓝、酒红、奶油</td></tr>
-        <tr><td>语气</td><td>暖、稳、有权威</td><td>快、俏、毒舌</td></tr>
+        <tr><td>颜色</td><td>紫色（Royal Purple）+ 金色配饰</td><td>脏粉/玫瑰粉、海军蓝、驼色</td></tr>
+        <tr><td>语气</td><td>温柔、稳、有耐心</td><td>俏、毒舌、时髦</td></tr>
         <tr><td>一句话</td><td>“Child, please.”</td><td>“Hello, darling.”</td></tr>
         <tr><td>内容</td><td>家庭/教育/穿搭/美食</td><td>情感/时尚/家居/待客</td></tr>
         <tr><td>受众</td><td>黑人女性/家庭 + Gen Z</td><td>女性/LGBTQ+ + Gen Z</td></tr>
@@ -121,20 +124,19 @@ tr:last-child td{border-bottom:0}
       <thead><tr><th>项</th><th>内容</th></tr></thead>
       <tbody>
         <tr><td>名字/年龄</td><td><b>Claudette Banks</b> / 68 岁（1958 年生）</td></tr>
-        <tr><td>外形</td><td>黑人女性；银白短卷发/低盘发、翡翠绿/金/梅子色、金耳环、莓色唇、优雅不夸张</td></tr>
+        <tr><td>外形</td><td>黑人女性；银白短卷发/低盘发、紫色、金耳环、莓色唇、优雅不夸张</td></tr>
         <tr><td>身份</td><td>退休高中校长；从教 30 年；社区长辈；丧偶 12 年；三个孩子、五个孙辈</td></tr>
         <tr><td>背景</td><td>住亚特兰大；前廊、花园、家庭照片墙；周末做一桌饭</td></tr>
-        <tr><td>性格</td><td>暖、稳、有权威、护短、幽默；不吼，一句“Child, please”就够</td></tr>
+        <tr><td>性格</td><td><b>温柔是她最大的特色</b>；稳、有耐心、护短、幽默；不吼，一句“Child, please”就够</td></tr>
         <tr><td>说话</td><td>中低音、慢、清楚；短句；“Child, please.” / “Baby, listen.” / “Mm-hmm.”</td></tr>
         <tr><td>内容</td><td>家庭/代际 30%；教育/人生/职场 25%；穿搭/美妆/头发 20%；美食/待客 15%；毒舌/POV 10%</td></tr>
         <tr><td>受众/品牌</td><td>黑人女性/家庭 25-55 + Gen Z；美妆（纹理头发/深肤色）、食品、服饰、家居</td></tr>
         <tr><td>平台</td><td>TikTok + IG 主；Facebook Reels 强；Pinterest 可选</td></tr>
-        <tr><td>禁忌</td><td>不演“大嗓门黑人奶奶”；不拿种族当笑点；不碰政治/成人/医疗/金融；不真人名人</td></tr>
+        <tr><td>禁忌</td><td>不碰政治/成人/医疗/金融；不真人名人</td></tr>
         <tr><td>系列</td><td>Ms. Claudette Says / Nana’s Rules / Sunday Table / Ask Ms. Claudette</td></tr>
       </tbody>
     </table>
   </div>
-  <p class="note">写作红线：她的权威来自 30 年校长和人生经验，不是“黑人奶奶很凶”的刻板印象。</p>
 </section>
 
 <section>
@@ -144,7 +146,7 @@ tr:last-child td{border-bottom:0}
       <thead><tr><th>项</th><th>内容</th></tr></thead>
       <tbody>
         <tr><td>名字/年龄</td><td><b>Charles “Charlie” Whitmore</b> / 58 岁</td></tr>
-        <tr><td>外形</td><td>白人男性；银灰短发、细框眼镜、剪裁西装/开衫、丝巾、图章戒指；驼色/海军蓝/酒红/奶油</td></tr>
+        <tr><td>外形</td><td>白人男性；银灰短发、细框眼镜、剪裁西装/开衫、丝巾、图章戒指；脏粉/玫瑰粉、海军蓝、驼色、奶油</td></tr>
         <tr><td>身份</td><td>退休时尚编辑 / 室内设计师；已婚 18 年，丈夫 David 是建筑师；两只狗</td></tr>
         <tr><td>背景</td><td>住纽约；公寓有艺术、书、酒吧车、狗；周末办晚餐</td></tr>
         <tr><td>性格</td><td>俏、毒舌、时髦、慷慨、护短；“先损你，再带你去买对的”</td></tr>
@@ -152,12 +154,11 @@ tr:last-child td{border-bottom:0}
         <tr><td>内容</td><td>情感/约会/红旗 30%；穿搭/家居 25%；待客/美食/酒 20%；文化/观点 15%；老公/狗/日常 10%</td></tr>
         <tr><td>受众/品牌</td><td>女性 25-45、LGBTQ+ 25-45、Gen Z；家居、时尚、美妆、旅行、酒、宠物</td></tr>
         <tr><td>平台</td><td>TikTok + IG 主；Pinterest 强；YouTube Shorts 复用；X 可选</td></tr>
-        <tr><td>禁忌</td><td>不演“娘娘腔/滥交”刻板印象；不拿性向当笑点；不碰政治/成人；不真人名人</td></tr>
+        <tr><td>禁忌</td><td>不碰政治/成人；不真人名人</td></tr>
         <tr><td>系列</td><td>Uncle Charlie Says / Absolutely Not / How to Host / Ask Uncle Charlie</td></tr>
       </tbody>
     </table>
   </div>
-  <p class="note">写作红线：他的毒舌来自时尚编辑的审美和阅历，不是“gay 一定毒舌”的刻板印象；丈夫 David 是正常、稳定的关系。</p>
 </section>
 
 <section>
@@ -169,7 +170,7 @@ tr:last-child td{border-bottom:0}
     </div>
     <div class="card">
       <h3>内容照抄</h3>
-      <p>毒舌长辈 + 生活建议 + 日常场景 + 高频；一个场景一句金句。</p>
+      <p>毒舌长辈 + 生活建议 + 日常场景 + 高頻；一个场景一句金句。</p>
     </div>
     <div class="card">
       <h3>身份全换</h3>
@@ -203,15 +204,51 @@ tr:last-child td{border-bottom:0}
 </section>
 
 <section>
-  <h2>七、需要领导支持</h2>
-  <div class="card">
-    <ul>
-      <li>设备与环境：由 <b>Monica</b> 支持，两个账号各一套手机、Gmail、Apple ID、专线。</li>
-      <li>内容制作：<b>跃跃</b>协助，我来辅助。</li>
-      <li>先各做 <b>10 条内容测试</b>，不设产能、不押爆款。</li>
-      <li>AI 工具、剪辑、英文文案、投流走公司现有资源。</li>
-    </ul>
+  <h2>七、两个账号的近 20 条选题</h2>
+  <p>都从粉奶奶的“毒舌长辈 + 日常场景 + 一句金句”延展；只换身份、场景、语言。</p>
+  <div class="topic-grid">
+    <div>
+      <div class="topic-head"><span class="dot purple"></span><h3>Claudette（黑人奶奶）</h3></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>选题</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Child, please：他不回消息，就是不想回</td></tr>
+            <tr><td>2</td><td>我教了 30 年高中生，一眼看出谁在撒谎</td></tr>
+            <tr><td>3</td><td>周日餐桌：我奶奶的玉米面包</td></tr>
+            <tr><td>4</td><td>68 岁的自然头发 routine</td></tr>
+            <tr><td>5</td><td>紫色就是我的颜色</td></tr>
+            <tr><td>6</td><td>孙辈觉得我温柔，直到他们撒谎</td></tr>
+            <tr><td>7</td><td>怎么请客不把自己累死</td></tr>
+            <tr><td>8</td><td>56 岁丧偶后，我学会的事</td></tr>
+            <tr><td>9</td><td>Ask Ms. Claudette：女儿的男朋友</td></tr>
+            <tr><td>10</td><td>前廊夜话：给 25 岁的自己</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div>
+      <div class="topic-head"><span class="dot rose"></span><h3>Charlie（白人 gay 大叔）</h3></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>选题</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Hello darling：这身衣服是在求救</td></tr>
+            <tr><td>2</td><td>Absolutely not：40 岁还用 200 针床单</td></tr>
+            <tr><td>3</td><td>3 小时办一场晚餐</td></tr>
+            <tr><td>4</td><td>50 岁后约会，我忽略过的红旗</td></tr>
+            <tr><td>5</td><td>我和 David 的 18 年</td></tr>
+            <tr><td>6</td><td>脏粉色是我的中性色</td></tr>
+            <tr><td>7</td><td>二手市场淘到的一角</td></tr>
+            <tr><td>8</td><td>Ask Uncle Charlie：他还关注前任</td></tr>
+            <tr><td>9</td><td>每个家都该有的一样东西</td></tr>
+            <tr><td>10</td><td>狗、咖啡、什么都不做的艺术</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
+  <p class="note">先各做 10 条库存，发起来；不设固定周更，跑顺再定。</p>
 </section>
 
 <footer class="note" style="border-top:1px solid var(--line);margin-top:36px;padding-top:14px">
