@@ -6,6 +6,14 @@
 <title>海外虚拟 IP · 对标粉奶奶，做两个长辈 IP</title>
 <style>
 :root{--bg:#f7f4ef;--ink:#1f1d1b;--muted:#6d6862;--line:#e2d9cd;--pink:#c23b6e;--card:#fff;--purple:#C8102E;--plum:#7A0A1B;--gold:#c9a227;--camel:#a8794f;--rose:#b76e79;--ivory:#f1e9dc;--red:#b3261e}
+html{scroll-behavior:smooth}
+body{padding-left:250px}
+.toc{position:fixed;left:24px;top:32px;width:200px;max-height:calc(100vh - 64px);overflow:auto;border-right:1px solid var(--line);padding-right:18px;font-size:13px;z-index:5}
+.toc-title{font-size:12px;letter-spacing:.14em;font-weight:800;color:var(--pink);margin-bottom:10px}
+.toc a{display:block;padding:5px 0;color:#3e3a36;text-decoration:none;border-bottom:1px dashed #e8ded2;line-height:1.45}
+.toc a:hover{color:var(--pink)}
+.toc a.sub{padding-left:12px;font-size:12px;color:var(--muted);border-bottom:0}
+section{scroll-margin-top:18px}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Helvetica Neue",Arial,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1080px;margin:0 auto;padding:48px 28px 80px}
@@ -57,11 +65,26 @@ tr:last-child td{border-bottom:0}
 .ref-card h3{margin:0 0 2px;font-size:15px}
 .ref-card .meta{font-size:12px;color:var(--muted)}
 .ref-card p{font-size:12px;margin:6px 0 0;color:#3e3a36}
+@media(max-width:1100px){body{padding-left:0}.toc{position:static;width:auto;max-height:none;border-right:0;border-bottom:1px solid var(--line);padding:0 0 14px;margin-bottom:18px;display:grid;grid-template-columns:1fr 1fr;gap:0 14px}.toc-title{grid-column:1/-1}}
 @media(max-width:800px){.benchmark,.duo,.grid3,.topic-grid,.ref-grid{grid-template-columns:1fr}}
-@media print{body{background:#fff}.wrap{padding:20px}}
+@media print{body{background:#fff;padding-left:0}.wrap{padding:20px}.toc{display:none}}
 </style>
 </head>
 <body>
+<nav class="toc" aria-label="目录">
+  <div class="toc-title">目录</div>
+  <a href="#benchmark">对标：Granny Spills</a>
+  <a href="#ips">一、我们的两个 IP</a>
+  <a href="#positioning">定位：一句话、造型、gay 感</a>
+  <a class="sub" href="#color">└ 色卡</a>
+  <a href="#claudette">二、Claudette 身份卡</a>
+  <a href="#charlie">三、Charlie 身份卡</a>
+  <a href="#copy">四、怎么抄 Granny 的骨架</a>
+  <a href="#platforms">五、平台拓展</a>
+  <a href="#topics">六、两个账号各 20 条选题</a>
+  <a href="#references">七、参考账号（分层）</a>
+</nav>
+
 <div class="wrap">
 <header>
   <div class="eyebrow">海外虚拟 IP / 双 IP 方案</div>
@@ -69,7 +92,7 @@ tr:last-child td{border-bottom:0}
   <p class="sub">一个黑人奶奶 + 一个白人 gay 大叔；TikTok / IG 主。</p>
 </header>
 
-<section class="benchmark">
+<section class="benchmark" id="benchmark">
   <img src="screens/granny-pink-sofa.jpg" alt="Granny Spills 粉色奶奶">
   <div>
     <div class="label">对标</div>
@@ -79,7 +102,7 @@ tr:last-child td{border-bottom:0}
   </div>
 </section>
 
-<section>
+<section id="ips">
   <h2>一、我们的两个 IP</h2>
   <div class="duo">
     <article class="person claudette">
@@ -103,7 +126,7 @@ tr:last-child td{border-bottom:0}
   </div>
 </section>
 
-<section>
+<section id="positioning">
   <h2>定位：一句话、造型、gay 感</h2>
   <div class="grid3">
     <div class="card"><h3>Claudette 一句话</h3><p>68 岁，亚特兰大退休校长，<b>现在主持一档本地电台/播客</b>，<b>最会穿的酷奶奶</b>。把“体面”穿成“时髦”，用温柔的语气说最狠的真话。</p></div>
@@ -119,7 +142,7 @@ tr:last-child td{border-bottom:0}
         <tr><td>头发</td><td><b>Sheryl 式大银灰蓬松大卷（Afro/大卷）</b>（不是小 TWA（短卷发））</td><td>银灰短发 + side part（侧分）</td></tr>
         <tr><td>脸部符号</td><td><b>金色/玳瑁大框猫眼</b></td><td><b>玳瑁细框眼镜 + 盐胡椒胡</b></td></tr>
         <tr><td>服装</td><td><b>红色 oversized varsity（棒球夹克）/bomber（飞行夹克）+ 黑色 wide-leg cargo（阔腿工装裤）</b></td><td><b>亮粉西装 + 白色 T 恤 + 黑色裤</b>（白只做内搭）</td></tr>
-        <tr><td>鞋</td><td><b>白色厚底 sneakers</b>（年轻化开关）</td><td>棕色麂皮乐福鞋</td></tr>
+        <tr><td>鞋</td><td><b>白色厚底 sneakers</b>（年轻化开关）</td><td>黑色皮鞋/乐福鞋</td></tr>
         <tr><td>首饰/道具</td><td>大金圈耳环 + 粗金链/金胸针</td><td><b>亮粉口袋巾 + 金图章戒指 + 好表</b></td></tr>
         <tr><td>一句话</td><td>教堂的体面 + 街头的鞋</td><td>他穿得比你好，但不会让你难堪</td></tr>
       </tbody>
@@ -132,7 +155,7 @@ tr:last-child td{border-bottom:0}
     <p><b>Charlie 的 gay 感：</b>《粉雄救兵》（Queer Eye）Fab Five（五人组）是原型；Charlie = Tan（造型）+ Bobby（家居）+ Antoni（美食），不学 Jonathan 的 camp（夸张表演型）。视觉开关：亮粉口袋巾 + 金图章戒指 + 好表；静态图只给 30%，剩下 70% 在声音、手势、内容。</p>
   </div>
 
-  <div style="margin-top:14px">
+  <div id="color" style="margin-top:14px">
     <img src="screens/color-board.png" alt="Claudette / Charlie 色卡" style="width:100%;border-radius:14px;border:1px solid var(--line);display:block">
   </div>
   <p class="note"><b>最终锁定：</b>Claudette Taraji Red（塔拉吉红） <b>#C8102E</b>；Charlie Hot Pink（亮粉）<b>#E63980</b>。其他颜色只做内搭/配件。</p>
@@ -143,7 +166,7 @@ tr:last-child td{border-bottom:0}
   <p class="note"><a href="beauty/">打开黑人奶奶“网红感”参考（9 人，有图有介绍） →</a></p>
 </section>
 
-<section>
+<section id="claudette">
   <h2>二、Claudette 身份卡</h2>
   <div class="table-wrap">
     <table>
@@ -166,7 +189,7 @@ tr:last-child td{border-bottom:0}
   </div>
 </section>
 
-<section>
+<section id="charlie">
   <h2>三、Charlie 身份卡</h2>
   <div class="table-wrap">
     <table>
@@ -189,7 +212,7 @@ tr:last-child td{border-bottom:0}
   </div>
 </section>
 
-<section>
+<section id="copy">
   <h2>四、怎么抄 Granny 的骨架</h2>
   <div class="grid3">
     <div class="card">
@@ -213,7 +236,7 @@ tr:last-child td{border-bottom:0}
   </div>
 </section>
 
-<section>
+<section id="platforms">
   <h2>五、平台拓展</h2>
   <div class="table-wrap">
     <table>
@@ -231,7 +254,7 @@ tr:last-child td{border-bottom:0}
   <p class="note">顺序：先把 TikTok/IG 跑顺，再加 Pinterest + Facebook Reels；YouTube Shorts 同步复用；X 只给 Charlie，不投入。</p>
 </section>
 
-<section>
+<section id="topics">
   <h2>六、两个账号各 20 条选题</h2>
   <p>每条都从粉奶奶的“鲜明性格 + 日常场景 + 一句金句”延展；这次不是只给标题，下面写清楚“这条具体讲什么”。</p>
 
@@ -294,7 +317,7 @@ tr:last-child td{border-bottom:0}
   </div>
 </section>
 
-<section>
+<section id="references">
   <h2>七、参考账号（分层）</h2>
   <p>先看 3 个核心，再看同类；不要一次学 10 个。</p>
 
